@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="angular.min.js"></script>
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <body ng-app="myApp" ng-controller="TestCtrl"<script src="angular.min.js"></script>>
+  <!--START OF HEADER-->
+<div class="navhead">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+    <hr>
+    <header class="bgimgok">
+    <div class="container-fluid headalign">
+       <div class="header-content">
+
+      <h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
+
+      <hr class="primary">
+
+      <h4>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</h4>
+
+      <a id="button" class="btn btn-primary btn-xl sr-button">FIND OUT MORE</a>
+
+    </div>
+
+    </div>
+
+
+    </header>
+    </div>
+<!-- END OF HEADER-->
+  <h1 style="font-size:40px">First Page</h1>
+
+  <table class="table table-bordered">
+
+    <thead>
+
+    <tr>
+            <td>Id</td>
+            <td>NAME </td>
+            <td>EMAIL</td>
+            <td>COMMENTS</td>
+
+
+    </tr>
+
+    </thead>
+    <tbody ng-repeat="data in comments">
+   <td>{{data.id}}</td>
+   <td>{{data.name}}</td>
+    <td>{{data.email}}</td>
+     <td>{{data.body}}</td>
+
+    </tbody>
+
+
+    </table>
+
+
+<!--START OF FIRST SECTION-->
+<section class="mainsection1">
+
+  <div class="container-fluid">
+
+    <h1 style="margin-top: 140px">We've got what you need!</h1>
+
+    <hr style="margin-top: 25px" class="light">
+
+    <h4>Start Bootstrap has everything you need to get your new website up and running in no time!<br> All of the templates and themes on Start Bootstrap are open source, free to download,<br> and easy to use. No strings attached!</h4>
+<a id="button1" style="font-weight: 700" class="btn btn-primary btn-xl sr-button">GET STARTED!</a>
+
+  </div>
+
+</section>
+<!--END OF FIRST SECTION-->
+
+<!--START OF SECOND SECTION-->
+<section class="mainsection2">
+  <div class="container-fluid">
+    <h1>At Your Service</h1>
+
+    <hr class="primary">
+      <div class="row">
+
+      <div class="col-lg-3 col-md-3">
+      <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+      <h1>Sturdy Template</h1>
+      <h4>Our templates are updated regularly so they don't break.</h4>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+     <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+     <h1>Ready to Ship</h1>
+     <h4>You can use this theme as is, or you can make changes!</h4>
+
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+      <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+      <h1>Up to Date</h1>
+      <h4>We update dependencies to keep things fresh.</h4>
+
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+      <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+      <h1>Made with Love</h1>
+      <h4>You have to make your websites with love these days!</h4>
+
+
+      </div>
+
+
+      </div>
+
+  </div>
+
+</section>
+<!--END OF SECOND SECTION-->
+
+<!-- START OF THIRD SECTION-->
+<section class="mainsection3">
+  <div class="container-fluid">
+  <div class="row">
+
+  <div class="col-lg-4 col-md-4">
+        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+
+  </div>
+
+    <div class="col-lg-4 col-md-4">
+        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+
+  </div>
+
+    <div class="col-lg-4 col-md-4">
+        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+
+  </div>
+
+    <div class="col-lg-4 col-md-4">
+        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+
+  </div>
+
+    <div class="col-lg-4 col-md-4">
+        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+
+  </div>
+
+    <div class="col-lg-4 col-md-4">
+        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+
+  </div>
+
+  </div>
+
+  <h1>Free Download at Start Bootstrap!</h1>
+  <a class="btn btn-default btn-xl sr-button">DOWNLOAD NOW!</a>
+
+</div>
+
+</section>
+
+
+<footer class="footersection">
+  <div class="container-fluid">
+    <h1>Let's Get In Touch!</h1>
+    <hr class="primary">
+
+    <h5>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</h5>
+
+    <div class="row">
+         <div class="col-lg-6 col-md-6 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>0987654321</p>
+         </div>
+         <div class="col-lg-6 col-md-6 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+         </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  var app = angular.module('myApp', []);
+app.controller('TestCtrl', ['$scope','$http',function($scope, $http) {
+$http({
+                method: 'GET',
+                url: 'https://jsonplaceholder.typicode.com/comments'
+
+            }).then(function successCallback(response) {
+                $scope.comments = response.data;
+
+            }, function errorCallback(response) {});
+}]);
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
